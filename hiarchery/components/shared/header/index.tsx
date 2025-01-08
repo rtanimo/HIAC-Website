@@ -1,5 +1,4 @@
 import {
-  ShoppingCart,
   UserIcon,
   ShoppingBag,
   Trophy,
@@ -10,7 +9,6 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Image from "next/image";
 import { APP_NAME } from "@/lib/constants";
 
 const Header = () => {
