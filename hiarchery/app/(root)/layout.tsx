@@ -1,5 +1,5 @@
 // sub-layout
-import Header from "@/components/shared";
+import Header from "@/components/shared/header";
 import Footer from "@/components/footer";
 
 export default function RootLayout({
