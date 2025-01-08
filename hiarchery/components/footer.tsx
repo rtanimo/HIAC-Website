@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="border-t">
       <div className="p-5 flex-center">
         <p>&copy;</p>
-        {currentYear} {APP_NAME}
+        {currentYear} {APP_NAME}, LLC
       </div>
     </footer>
   );
