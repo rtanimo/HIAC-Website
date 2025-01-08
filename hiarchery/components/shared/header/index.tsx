@@ -1,15 +1,14 @@
 import {
   UserIcon,
   ShoppingBag,
-  Trophy,
   Camera,
   Calendar,
   GraduationCap,
   Contact,
+  Target,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { APP_NAME } from "@/lib/constants";
 
 const Header = () => {
   return (
@@ -17,12 +16,12 @@ const Header = () => {
       <div className="wrapper flex-between">
         <div className="flex-start">
           <Link href="/" className="flex-start">
-            <span className="font-bold text-2xl">{APP_NAME}</span>
+            <span className="font-bold text-2xl">HIAC</span>
           </Link>
         </div>
         <div className="space-x-2">
           <Button asChild variant="ghost">
-            <Link href="/events">
+            <Link href="/news">
               <Calendar />
               Events
             </Link>
@@ -35,7 +34,7 @@ const Header = () => {
           </Button>
           <Button asChild variant="ghost">
             <Link href="/tournaments">
-              <Trophy />
+              <Target />
               Tournaments
             </Link>
           </Button>
