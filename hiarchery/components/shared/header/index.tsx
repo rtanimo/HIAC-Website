@@ -10,22 +10,27 @@ const Header = () => {
       <div className="wrapper flex-between">
         <div className="flex-start">
           <Link href="/" className="flex-start">
-            <Image
-              src="/images/logo.svg"
-              width={48}
-              height={48}
-              alt={`${APP_NAME} logo`}
-            />
-            <span className="hidden lg:block font-bold text-2xl ml-3">
-              {APP_NAME}
-            </span>
+            <span className="font-bold text-2xl">{APP_NAME}</span>
           </Link>
         </div>
         <div className="space-x-2">
           <Button asChild variant="ghost">
-            <Link href="/cart">
-              <ShoppingCart /> Cart
-            </Link>
+            <Link href="/events">Events</Link>
+          </Button>
+          <Button asChild variant="ghost">
+            <Link href="/classes">Classes</Link>
+          </Button>
+          <Button asChild variant="ghost">
+            <Link href="/tournaments">Tournaments</Link>
+          </Button>
+          <Button asChild variant="ghost">
+            <Link href="/about">About</Link>
+          </Button>
+          <Button asChild variant="ghost">
+            <Link href="/gallery">Gallery</Link>
+          </Button>
+          <Button asChild variant="ghost">
+            <Link href="/store">Store</Link>
           </Button>
           <Button asChild>
             <Link href="/sign-on">
