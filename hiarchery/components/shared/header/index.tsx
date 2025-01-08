@@ -1,4 +1,13 @@
-import { ShoppingCart, UserIcon } from "lucide-react";
+import {
+  ShoppingCart,
+  UserIcon,
+  ShoppingBag,
+  Trophy,
+  Camera,
+  Calendar,
+  GraduationCap,
+  Contact,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
@@ -15,22 +24,40 @@ const Header = () => {
         </div>
         <div className="space-x-2">
           <Button asChild variant="ghost">
-            <Link href="/events">Events</Link>
+            <Link href="/events">
+              <Calendar />
+              Events
+            </Link>
           </Button>
           <Button asChild variant="ghost">
-            <Link href="/classes">Classes</Link>
+            <Link href="/classes">
+              <GraduationCap />
+              Classes
+            </Link>
           </Button>
           <Button asChild variant="ghost">
-            <Link href="/tournaments">Tournaments</Link>
+            <Link href="/tournaments">
+              <Trophy />
+              Tournaments
+            </Link>
           </Button>
           <Button asChild variant="ghost">
-            <Link href="/about">About</Link>
+            <Link href="/about">
+              <Contact />
+              About
+            </Link>
           </Button>
           <Button asChild variant="ghost">
-            <Link href="/gallery">Gallery</Link>
+            <Link href="/gallery">
+              <Camera />
+              Gallery
+            </Link>
           </Button>
           <Button asChild variant="ghost">
-            <Link href="/store">Store</Link>
+            <Link href="/store">
+              <ShoppingBag />
+              Store
+            </Link>
           </Button>
           <Button asChild>
             <Link href="/sign-on">
